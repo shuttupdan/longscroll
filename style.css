@@ -1,0 +1,201 @@
+#box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: darkgrey 3px dotted;
+  width: 1366px;
+  height: 635px;
+  z-index: 5;
+}
+#box h1, h2{
+  text-align: center;
+  color: White;
+}
+#top{
+  width: 1000px;
+  height: 110px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  z-index: 4;
+}
+#right{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  z-index: 4;
+}
+#right h3{
+  position: absolute;
+  bottom: 3px;
+  right: 40px;
+  color: white;
+}
+#wrapper {
+
+  background-image: url("nightskybg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:1300px;
+  width:1300px;
+  position:fixed;
+  top:-50px;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(0deg);
+  z-index: -3;
+  /*border: 1px solid red;*/
+}
+#bg {
+  background-image: url("landscape.gif");
+   background-repeat:no-repeat;
+  background-size: 850px;
+
+  width: 850px;
+  height: 500px;
+  position:fixed;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bush{
+  position: fixed;
+  left: 250px;
+  bottom: 0;
+  z-index: 3;
+}
+#bush img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  height: 120px;
+}
+#man{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+}
+#man img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+#bigfoot{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 80px;
+  left:0;
+  z-index: 2;
+}
+#bigfoot img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+#bigfoot2{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  z-index: 2;
+}
+#bigfoot2 img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+#ufo{
+  position: fixed;
+  top: 200px;
+  left: 0;
+  z-index: -1;
+}
+#ufo img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+#ufo2{
+  position: fixed;
+  top: 300px;
+  right: 0;
+  z-index: -1;
+}
+#ufo2 img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+#ufo3{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+#ufo3 img{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+body{
+  height :12000px;
+  background-color: black;
+}

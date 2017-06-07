@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <title>Night Sky long scrolling website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="box">
+    <h1>Summer Nights: A Look at the June Night Sky</h1>
+    <h2 id="message">Please resize your window to fit the dotted gray outline</h2>
+  </div>
+  <div id="top"></div>
+  <div id="bigfoot"><img src="images/bigfoot_03.gif" height="100"></div>
+  <div id="bigfoot2"><img src="images/bigfoot2.gif" height="100"></div>
+  <div id="left"></div>
+  <div id="right">
+    <h3>&copy;2017 Dan Marquis</h3>
+  </div>
+  <div id="bg"></div>
+  <div id="wrapper"></div>
+  <div id="man"><img src="images/man.gif" height="50"></div>
+  <div id="bush"><img src="images/bush.gif"></div>
+  <div id="ufo"><img src="images/ufo.gif" width="40"></div>
+  <div id="ufo2"><img src="images/ufo.gif" width="80"></div>
+  <div id="ufo3"><img src="images/ufo3.gif" width="120"></div>
+</body>
+<script type="text/javascript">
+///message///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1) {
+  $("#message").css({
+      "display": "none"
+  });
+}
+ else {
+   $("#message").css({
+     "display":"block"
+   });
+ }
+});
+  /////nightsky////
+  $(document).scroll(function(){
+
+    var fromTop = $(window).scrollTop();
+
+    $("#wrapper").css({
+      "transform": "rotate(-"+ fromTop/47  +"deg)"
+
+    });
+
+  });
+ ////bigfoot1////
+ $(window).scroll(function() {
+   if ($(this).scrollTop() > 2400) {
+   $("#bigfoot").css({
+       "left": (($(window).scrollTop()-2400)*0.35) + "px"
+   });
+ }
+  else {
+    $("#bigfoot").css({
+      "left":"0"
+    });
+  }
+});
+///bigfoot2///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 7000) {
+  $("#bigfoot2").css({
+      "right": (($(window).scrollTop()-7000)*0.35) + "px"
+  });
+}
+ else {
+   $("#bigfoot2").css({
+     "right":"0"
+   });
+ }
+});
+///ufo///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1200) {
+  $("#ufo").css({
+      "left": (($(window).scrollTop()-1200)*0.7) + "px"
+  });
+}
+ else {
+   $("#ufo").css({
+     "left":"0"
+   });
+ }
+});
+///ufo2///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 3600) {
+  $("#ufo2").css({
+      "right": (($(window).scrollTop()-3600)*0.5) + "px"
+  });
+}
+ else {
+   $("#ufo2").css({
+     "right":"0"
+   });
+ }
+});
+///ufo3///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 8000) {
+  $("#ufo3").css({
+      "left": (($(window).scrollTop()-8000)*0.35) + "px"
+  });
+}
+ else {
+   $("#ufo3").css({
+     "left":"0"
+   });
+ }
+});
+///man///
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 9750) {
+  $("#man").css({
+      "display": "none"
+  });
+}
+ else {
+   $("#man").css({
+     "display":"inline"
+   });
+ }
+});
+
+</script>
+</html>
